@@ -85,6 +85,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 set :markdown_engine, :redcarpet
+set :markdown, tables: true, autolink: true, gh_blockcode: true, fenced_code_blocks: true
 
 # set relative assets and links
 # activate :relative_assets
