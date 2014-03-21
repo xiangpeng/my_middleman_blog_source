@@ -85,6 +85,10 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 set :markdown_engine, :redcarpet
+
+# set relative assets and links
+# activate :relative_assets
+# set :relative_links, true
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
