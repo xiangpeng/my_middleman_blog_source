@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title><%= current_article.title unless current_article.nil? %></title>
+    <%= partial "head" %>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+  </head>
+  <body>
+    <%= partial "header"%>
+    <div id='container'>
+      <%= partial "links"%>
+      <%= partial "pages", locals: {current_article: current_article}%>
+      <div class="content">
+        <section class='post'>
+          <h1 class="upcase">
+            <div class='date'><%= current_article.date.strftime('%Y %b %e') %></div>
+            <%= current_article.title%>
+          </h1>
+          <%= yield %>
+        </section>
+      </div>
+
+      <%= partial "disqus" %>
+    </div>
+    <%= partial "footer"%>
+  </body>
+</html>

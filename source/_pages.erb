@@ -1,0 +1,14 @@
+  <% prev_article = current_article.previous_article %>
+  <% next_article = current_article.next_article %>
+<section class="paging">
+  <% if prev_article %>
+    <div class="left">
+      <%= link_to '‹', prev_article.url %>
+    </div>
+  <% end %>
+  <% if next_article %>
+    <div class="right">
+      <%= link_to '›', next_article.url %>
+    </div>
+  <% end %>
+</section>
