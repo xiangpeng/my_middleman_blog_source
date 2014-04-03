@@ -28,6 +28,8 @@ activate :blog do |blog|
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
 end
+# syntax
+activate :syntax
 
 page "/feed.xml", layout: false
 
