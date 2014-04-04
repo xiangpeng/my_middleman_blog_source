@@ -1,5 +1,5 @@
 <div class="block">
-  <% links = [{name: '关于', url: '/about'}, {name: 'Email', url: 'mailto:koalaxp8@gmail.com', external: true}, {name: 'GitHub', url: 'http://github.com/xiangpeng', external: true}]%>
+  <% links = [{name: '关于', url: '/about.html'}, {name: 'Email', url: 'mailto:koalaxp8@gmail.com', external: true}, {name: 'GitHub', url: 'http://github.com/xiangpeng', external: true}]%>
   <% links.each do |link|%>
     <%= link_to link[:name], link[:url], target: (link[:external] ? '_blank' : '_top')%>
   <% end %>
