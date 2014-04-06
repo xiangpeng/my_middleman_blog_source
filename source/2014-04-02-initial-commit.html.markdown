@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Initial Commit
 date: 2014-04-02 15:23 UTC
-tags: life
+category: life
 ---
 ##Start...
 很多时候，不是自己不能做，而是不想做，懒得做。比如一直想用[Github Pages](https://pages.github.com/)搭建一个自己的个人博客，直到最近才动手，真是一个重度拖延症患者啊...(＞﹏＜)

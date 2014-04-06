@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 九九乘法表
 date: 2014-04-03 14:24 UTC
 tags: ruby

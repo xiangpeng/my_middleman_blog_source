@@ -2,7 +2,7 @@
 # Blog settings
 ###
 
-# Time.zone = "UTC"
+Time.zone = "Beijing"
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -12,7 +12,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
+  blog.layout = "post"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
@@ -22,11 +22,16 @@ activate :blog do |blog|
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
-
   # Enable pagination
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
+  blog.custom_collections = {
+    category: {
+      link: '/categories/{category}.html',
+      template: '/category.html'
+    }
+  }
 end
 
 page "/feed.xml", layout: false
@@ -70,7 +75,7 @@ page "/feed.xml", layout: false
 
 # Reload the browser automatically whenever files change
 activate :livereload
-
+activate :directory_indexes
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -93,10 +98,10 @@ set :markdown, tables: true, autolink: true, gh_blockcode: true, fenced_code_blo
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
