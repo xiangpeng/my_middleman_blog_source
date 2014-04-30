@@ -12,7 +12,7 @@ category: life
 
 ###美元
 
-换了1500美元...（最近人民币跌的比较厉害，100美元要624软妹币，5555...）
+换了1500美元...（最近人民币跌得比较厉害，100美元要624软妹币，55555...）
 ![dollars](https://kssm.kuaipandata.com/kss_web/thumb?i=0ZjTum0rEpsk4bvZ14HnMWAjpqhpz6dOP/2ajwkR5/sfU1Q9pNwwHC3mjzgE0ET8&amp;c=XiaoMi&amp;tm=1398781581&amp;w=1024&amp;h=768&amp;s=kt4UmATGwtRKxfhcuMaT8WUQ9CY=&amp;auto_rotate=1)
 
 这是好多年前一位在美国的同学送的CK钱包，之前想用来着的，可是这货只能装美元，软妹币放进去就会露一截在外头...刚好这次可以用起来了，哈哈！
